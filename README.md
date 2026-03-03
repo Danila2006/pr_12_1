@@ -16,13 +16,6 @@
 ```bash
 flutter pub get
 
-## Запуск тестів
+Запуск тестів
+
 Запуск усіх тестів:
-flutter test
-
-Запуск тесту конкретного файлу:
-flutter test test/unit/models/product_test.dart
-
-## Перевірка покриття коду
-Щоб отримати coverage (покриття тестами):
-flutter test --coverage
