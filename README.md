@@ -1,16 +1,28 @@
-# pr_12_1
+# pr_12_1 - Unit-тести для Інтернет-магазину
 
-A new Flutter project.
+Цей проект демонструє **unit-тести для інтернет-магазину** на Flutter/Dart.
 
-## Getting Started
+- **Product**: тести `fromJson`, `toJson`, `copyWith`, `discountedPrice`, equality  
+- **ShoppingCart**: тести `addItem`, `removeItem`, `total`, `applyPromoCode` (з моками)  
+- **OrderValidator**: валідація адреси, кредитної картки та мінімальної суми замовлення  
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## Встановлення
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Переконайтесь, що встановлений Flutter SDK.
+2. Встановіть залежності проекту:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+
+## Запуск тестів
+Запуск усіх тестів:
+flutter test
+
+Запуск тесту конкретного файлу:
+flutter test test/unit/models/product_test.dart
+
+## Перевірка покриття коду
+Щоб отримати coverage (покриття тестами):
+flutter test --coverage
